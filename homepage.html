@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>neighborh2o2od.com/bouncingbox</title>
+    <link rel="stylesheet" href = "./css/style.css" >
+    <script src="./js/jquery.min.js"></script>
+    <!-- <link rel="shortcut icon" href="./img/favicon_1.ico" />
+    <link rel="apple-touch-icon" href="./img/icon_1.png" /> -->
+
+
+
+    
+    <!-- customized font family -->
+    <style> 
+        @font-face {
+           font-family: font_en_regular;
+           src: url(./font/neue-haas-unica-pro-regular.ttf);
+        }
+        
+        * {
+           font-family: font_en_regular;
+        }
+    </style>
+
+    <!-- bouncing box hover and slide down / slide up -->
+    <script type="text/javascript">
+        $(function(){
+            $(".box_en li").hover(
+            function(){
+                $('>ul.box_en_dropdown:not(:animated)',this).slideDown(80);
+            },
+            function(){
+                $('>ul.box_en_dropdown',this).slideUp(80);
+            });
+        });
+    </script>
+
+
+</head>
+
+<body>
+
+    <!-- bouncing box -->
+    <nav id="bouncingBox" class="box_en">
+    
+        <li>
+            <div class="box_en_title"></div>
+            <ul class="box_en_dropdown">
+                <li><a id='toHomepage_en'>knock knock knock*</a></li>
+                <li><a href="./artists&designers.html">artists & designers*</a></li>
+                <li><a href="./photo gallery.html">photo gallery*</a></li>
+                <li><a href="./news.html">news*</a></li>
+                <li><a href="./about.html">about*</a></li>
+                <li><a id='toCnPage' style="font-size: 1.1em; border-bottom: solid; border-color: #4B69B2;
+                    border-width: 0.1em;">中文*</a></li>
+            </ul>
+        
+        </li>   
+    </nav>
+
+     
+
+    <!-- bouncing.js -->
+    <script src="./js/bouncing.js"></script>
+
+    
+  </div>
+</div>
+
+    
+</body>
+</html>
